@@ -7,12 +7,14 @@ tea：TEA算法由剑桥大学计算机实验室的David Wheeler和Roger Needham
 本软件包已上传到 pypi, 可通过 pip 进行安装：
 
 ```
-pip install 
+pip install tea-python
 ```
 
 ## 示例代码：
 
 ```python
+import tea
+
 if __name__ == '__main__':
     key = "1122334455667788".encode()
     origin = bytearray()
@@ -25,4 +27,5 @@ if __name__ == '__main__':
     print('加密数据:', encrypt_data.hex())
     decrypt_data = tea.decrypt(encrypt_data, key)
     print('解密数据:', decrypt_data.hex())
+
 ```
