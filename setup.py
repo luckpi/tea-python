@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 file_path = 'README.md'
 
-setup(name='tea',
+setup(name='tea-python',
       version='1.0',
       description='Tiny Encryption Algorithm',
       long_description=open(file_path, encoding='utf-8').read(),
