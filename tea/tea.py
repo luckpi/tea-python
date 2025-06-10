@@ -7,7 +7,7 @@ Authors: gumy <ojbk@live.com>
 import struct
 
 
-def encrypt(data: bytes | bytearray, key: bytes | bytearray):
+def encrypt(data: bytes, key: bytes):
     data_len = len(data)
     if data_len % 8 != 0:
         return None
@@ -34,7 +34,7 @@ def encrypt(data: bytes | bytearray, key: bytes | bytearray):
     return encrypt_data
 
 
-def decrypt(data: bytes | bytearray, key: bytes | bytearray):
+def decrypt(data: bytes, key: bytes):
     data_len = len(data)
     if data_len % 8 != 0:
         return None
